@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  background-color: #F6F6F6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-image: linear-gradient(to right, #FFB38B , #FF0865);
+}
+
+.ham-button {
+  float: left;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.ham {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 5px 3px;
+}
+	
+.topnav .home {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 7px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 7px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+.topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+	
+.welcome-bar {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+  font-size: 20px;
+}
+
+.split {
+  display: flex;
+}
+
+.split .left {
+  width: 70%;
+  position: relative;
+}
+
+.split .right {
+  width: 30%;
+  max-height: 670px;
+  overflow-y: auto;
+}
+
+.button-container {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 40px;
+	
+  border: solid 20px;
+  border-radius: 30px;
+  border-color: rgb(255, 179, 139, .4);
+  margin: 25px;	
+  overflow: auto;
+
+
+}
+
+.button-container .icons {
+	width: 130px;
+    height: 130px;
+	border-radius: 30px;
+}
+
+	figure{
+		margin: auto;
+	}
+	
+figcaption {
+    color: white;
+	background: #FF0865;
+	text-align: center;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 700;
+	padding: 2px;
+	border-radius: 15px;
+}
+
+a {
+	text-decoration: none;
+	margin: auto;
+}
+
+.button-container .icons:hover {
+    opacity: .7;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 4px solid #9150b0;
+  text-align: center;
+  padding: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f4ebf7;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+	
+<div class="ham-button">
+  <div class="ham"></div>
+  <div class="ham"></div>
+  <div class="ham"></div>
+</div>
+	
+<div class="home"><strong>CLASS1</strong></div>
+	
+<div class="search-container">
+    <form action="home.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+	
+	<div class="split">
+		
+		<div class="left">
+
+			<div class="welcome-bar">		
+				<h2>Class 1 - Intro to Art</h2>
+				<img src="img/calendar.png" alt="calendar" style="width: 80px">
+				<img src="img/email.jpg" alt="email" style="width: 80px">			
+			</div>
+
+			<div class="button-container">
+			  
+				 <a href="attendance.html">
+				  <figure>
+					  <img src="img/attendance.jpg" alt="attendance" class="icons">
+					  <figcaption>Attendance</figcaption>
+				  </figure>
+				 </a>
+
+
+				<a href="home.php">
+				  <figure>
+					  <img src="img/grades.png" alt="grades" class="icons">
+					  <figcaption>Grades</figcaption>
+				  </figure>
+				</a>
+
+				<a href="seating.html">
+				  <figure>
+					  <img src="img/seat.jpg" alt="seat" class="icons">
+					  <figcaption>Seating Chart</figcaption>
+				  </figure>
+				</a>
+
+				<a href="behaviorform.html">
+				  <figure>
+					  <img src="img/behavior.png" alt="behavior" class="icons">
+					  <figcaption>Behavior Form</figcaption>
+				  </figure>
+				</a>
+
+				<a href="home.php">
+				  <figure>
+					  <img src="img/data.jpg" alt="data" class="icons">
+					  <figcaption>Data Collection</figcaption>
+				  </figure>
+				</a>
+
+				<a href="home.php">
+				  <figure>
+					  <img src="img/emails.jpg" alt="emails" class="icons">
+					  <figcaption>E-mail</figcaption>
+				  </figure>
+				</a>
+			
+			</div>
+
+		</div>
+
+		
+		<div class="right">
+
+		  <table>
+			<tr style="background-color: #c69bd8">
+			  <th>ID</th>
+			  <th>STUDENT</th>
+			</tr>
+			<tr>
+			  <td>001</td>
+			  <td>Student1</td>    
+			</tr>
+			<tr>
+			  <td>002</td>
+			  <td>Student2</td> 
+			</tr>
+			<tr>
+			  <td>003</td>
+			  <td>Student3</td> 
+			</tr>
+			<tr>
+			  <td>004</td>
+			  <td>Student4</td> 
+			</tr>
+			<tr>
+			  <td>005</td>
+			  <td>Student5</td> 
+			</tr>
+			<tr>
+			  <td>006</td>
+			  <td>Student6</td> 
+			</tr>
+			<tr>
+			  <td>007</td>
+			  <td>Student7</td> 
+			</tr>
+			<tr>
+			  <td>008</td>
+			  <td>Student8</td> 
+			</tr>
+			<tr>
+			  <td>009</td>
+			  <td>Student9</td> 
+			</tr>
+			<tr>
+			  <td>010</td>
+			  <td>Student10</td> 
+			</tr>
+			<tr>
+			  <td>011</td>
+			  <td>Student11</td> 
+			</tr>
+			<tr>
+			  <td>012</td>
+			  <td>Student12</td>
+			</tr>
+		  </table>
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>
